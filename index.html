@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智休闹钟 | 隐私政策</title>
+  <meta name="description" content="智休闹钟隐私政策公开页面">
+  <style>
+    :root {
+      --bg: #f5f2eb;
+      --panel: rgba(255, 255, 255, 0.78);
+      --border: rgba(110, 87, 58, 0.14);
+      --text: #2c241d;
+      --muted: #6f6256;
+      --accent: #b85c38;
+      --accent-strong: #8e3f21;
+      --shadow: 0 24px 60px rgba(77, 55, 31, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(210, 163, 109, 0.26), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(184, 92, 56, 0.22), transparent 28%),
+        linear-gradient(180deg, #f8f5ef 0%, var(--bg) 100%);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(720px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 40px 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      line-height: 1.05;
+    }
+
+    p {
+      margin: 18px 0 0;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .actions {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fffaf5;
+      box-shadow: 0 14px 28px rgba(184, 92, 56, 0.24);
+    }
+
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--accent-strong);
+      border: 1px solid rgba(184, 92, 56, 0.14);
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .meta {
+      margin-top: 24px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Zhixiu Alarm Clock</p>
+    <h1>智休闹钟隐私政策</h1>
+    <p>这是为 App Store Connect 准备的公开隐私政策页面。你可以直接使用独立页面链接作为 Privacy Policy URL。</p>
+    <div class="actions">
+      <a class="button primary" href="./privacy-policy.html">查看隐私政策</a>
+      <a class="button secondary" href="mailto:cheszhou@qq.com">联系开发者</a>
+    </div>
+    <p class="meta">推荐提交链接：<strong>/privacy-policy.html</strong></p>
+  </main>
+</body>
+</html>
